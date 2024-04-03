@@ -1,0 +1,15 @@
+# Explanation of cron schedule:
+# | ┌───────── minute (0)
+# | │ ┌───────── hour (*)
+# | │ │ ┌───────── day of month (*)
+# | │ │ │ ┌───────── month (*)
+# | │ │ │ │ ┌───────── day of week (*)
+# | │ │ │ │ │
+# | │ │ │ │ │
+    0 * * * * cd /usr/src/app && npm start >> /usr/src/app/logs/healthCheck.log 2>&1
+
+# The job defined above will run npm start every hour, starting at minute 0 of each hour.
+# Output from npm start will be appended to the healthCheck.log file located in /usr/src/app/logs/.
+# The '2>&1' redirects both standard output and standard error to the log file.
+
+

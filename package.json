@@ -1,0 +1,21 @@
+{
+  "name": "automonitor",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/main.js",
+  "scripts": {
+    "start": "tsc && node dist/main.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.6.7",
+    "dotenv": "^16.4.5",
+    "nodemailer": "^6.9.11",
+    "typescript": "^5.3.3"
+  },
+  "devDependencies": {
+    "@types/nodemailer": "^6.4.14"
+  }
+}
